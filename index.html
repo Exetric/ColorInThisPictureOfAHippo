@@ -1,0 +1,34 @@
+<html>
+  <head>
+    <title>Color the Hippo</title>
+    <link rel="shortcut icon" type="image/jpg" href="./assets/hippofavicon.png"/>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script type="text/JavaScript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=1.4.2"></script>
+  </head>
+  <body>
+    <canvas id="myCanvas">
+		    Bro how old of a web browser are you using that it doesn't have canvas support
+	  </canvas>
+    <img class="hippo" draggable="false" src="./assets/hippo.png" />
+    <div>
+      <div onclick="colorSelect('fff')" class="white"></div>
+      <div onclick="colorSelect('000')" class="black"></div>
+      <div onclick="colorSelect('f00')" class="red"></div>
+      <div onclick="colorSelect('f70')" class="orange"></div>
+      <div onclick="colorSelect('ffff3a')" class="yellow"></div>
+      <div onclick="colorSelect('3aff5e')" class="green"></div>
+      <div onclick="colorSelect('0ff')" class="cyan"></div>
+      <div onclick="colorSelect('00f')" class="blue"></div>
+      <div onclick="colorSelect('f0f')" class="violet"></div>
+    </div>
+    <div>
+      <div onclick="penSize(2)" class="twosize"></div>
+      <div onclick="penSize(4)" class="foursize"></div>
+      <div onclick="penSize(8)" class="eightsize"></div>
+      <div onclick="penSize(16)" class="sixteensize"></div>
+      <div onclick="penSize(32)" class="thirtytwosize"></div>
+    </div>
+    <a href="https://twitter.com/exetric" target="_blank"><img class="twitter" onclick="" draggable="false" src="./assets/twitter.png" /></a>
+  </body>
+</html>

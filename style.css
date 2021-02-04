@@ -1,0 +1,176 @@
+.hippo {
+  position: fixed;
+  display: block;
+  left: 50%;
+  top: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  user-select: none;
+  -ms-user-select: none;
+  pointer-events: none;
+}
+.twitter {
+  position: fixed;
+  display: block;
+  bottom: 5px;
+  left: 5px;
+  cursor: pointer;
+  user-select: none;
+  -ms-user-select: none;
+}
+.white {
+  position: fixed;
+  display: block;
+  background-image: url(./assets/white.png);
+  width: 84px;
+  height: 65px;
+  bottom: 2px;
+  left: 10%;
+  cursor: pointer;
+}
+.black {
+  position: fixed;
+  display: block;
+  background-image: url(./assets/black.png);
+  width: 97px;
+  height: 78px;
+  bottom: 2px;
+  left: 20%;
+  cursor: pointer;
+}
+.red {
+  position: fixed;
+  display: block;
+  background-image: url(./assets/red.png);
+  width: 80px;
+  height: 74px;
+  bottom: 2px;
+  left: 30%;
+  cursor: pointer;
+}
+.green {
+  position: fixed;
+  display: block;
+  background-image: url(./assets/green.png);
+  width: 89px;
+  height: 61px;
+  bottom: 2px;
+  left: 60%;
+  cursor: pointer;
+}
+.yellow {
+  position: fixed;
+  display: block;
+  background-image: url(./assets/yellow.png);
+  width: 75px;
+  height: 75px;
+  bottom: 2px;
+  left: 50%;
+  cursor: pointer;
+}
+.orange {
+  position: fixed;
+  display: block;
+  background-image: url(./assets/orange.png);
+  width: 109px;
+  height: 91px;
+  bottom: 2px;
+  left: 40%;
+  cursor: pointer;
+}
+.violet {
+  position: fixed;
+  display: block;
+  background-image: url(./assets/violet.png);
+  width: 90px;
+  height: 73px;
+  bottom: 2px;
+  left: 90%;
+  cursor: pointer;
+}
+.blue {
+  position: fixed;
+  display: block;
+  background-image: url(./assets/blue.png);
+  width: 73px;
+  height: 82px;
+  bottom: 2px;
+  left: 80%;
+  cursor: pointer;
+}
+.cyan {
+  position: fixed;
+  display: block;
+  background-image: url(./assets/cyan.png);
+  width: 83px;
+  height: 86px;
+  bottom: 2px;
+  left: 70%;
+  cursor: pointer;
+}
+.twosize {
+  position: fixed;
+  display: block;
+  background-image: url(./assets/2size.png);
+  width: 58px;
+  height: 55px;
+  top: 2px;
+  left: 30%;
+  cursor: pointer;
+}
+.foursize {
+  position: fixed;
+  display: block;
+  background-image: url(./assets/4size.png);
+  width: 48px;
+  height: 50px;
+  top: 2px;
+  left: 40%;
+  cursor: pointer;
+}
+.eightsize {
+  position: fixed;
+  display: block;
+  background-image: url(./assets/8size.png);
+  width: 45px;
+  height: 59px;
+  top: 2px;
+  left: 50%;
+  cursor: pointer;
+}
+.sixteensize {
+  position: fixed;
+  display: block;
+  background-image: url(./assets/16size.png);
+  width: 55px;
+  height: 55px;
+  top: 2px;
+  left: 60%;
+  cursor: pointer;
+}
+.thirtytwosize {
+  position: fixed;
+  display: block;
+  background-image: url(./assets/32size.png);
+  width: 55px;
+  height: 53px;
+  top: 2px;
+  left: 70%;
+  cursor: pointer;
+}
+html {
+  cursor: url('./assets/pencil.png') 0 40, default;
+}
+
+body, html {
+	height: 100%;
+}
+
+#myCanvas {
+  position: fixed;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}

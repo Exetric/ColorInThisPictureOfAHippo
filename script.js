@@ -9,6 +9,11 @@ function penSize(number)
 }
 
 window.onload = function() {
+  console.log("%cWelcome to the console epic hacker man! Seeing as you're so smart to find your way here, I'll give you a super secret tip, but don't tell anyone, it's a secret. If you type in", "color: white; font-family: cursive; font-size: 2em; font-weight: bolder; text-shadow: #000 1px 1px;")
+  console.log("%ccolorSelect(\"Hex Code Without the #\");", "color: #1ce388; font-family: monospace; font-size: 2em; font-weight: bolder; text-shadow: #000 1px 1px;")
+  console.log("%cit will select that color, and if you do", "color: white; font-family: cursive; font-size: 2em; font-weight: bolder; text-shadow: #000 1px 1px;")
+  console.log("%cpenSize(\"size of the pen\");", "color: #1ce388; font-family: monospace; font-size: 2em; font-weight: bolder; text-shadow: #000 1px 1px;")
+  console.log("%cit'll change the pen size to whatever you want, remember to keep this between us though, capeesh? Also if you're using google chrome, ignore that error, it doesn't do anything, well nothing important at least", "color: white; font-family: cursive; font-size: 2em; font-weight: bolder; text-shadow: #000 1px 1px;")
 	var myCanvas = document.getElementById("myCanvas");
 	var ctx = myCanvas.getContext("2d");
   myCanvas.width = window.innerWidth;

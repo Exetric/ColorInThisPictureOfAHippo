@@ -8,6 +8,10 @@ function penSize(number)
   ctx.lineWidth = number;
 }
 
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+  window.location.replace('https://www.youtube.com/watch?v=TxJqE9RuI9c&ab_channel=Exetric');
+}
+
 window.onload = function() {
   console.log("%cWelcome to the console epic hacker man! Seeing as you're so smart to find your way here, I'll give you a super secret tip, but don't tell anyone, it's a secret. If you type in", "color: white; font-family: cursive; font-size: 2em; font-weight: bolder; text-shadow: #000 1px 1px;")
   console.log("%ccolorSelect(\"Hex Code Without the #\");", "color: #1ce388; font-family: monospace; font-size: 2em; font-weight: bolder; text-shadow: #000 1px 1px;")

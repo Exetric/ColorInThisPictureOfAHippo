@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Color The Hippo</title>
+  <link rel="stylesheet" href="./css/master.css">
+  <link rel="shortcut icon" type="image/png" href="./assets/hippofavicon.png" />
+  <meta name="title" content="Color In This Picture of a Hippo.com">
+  <meta name="description" content="a site where you color in a picture of a hippo, you got some colors and stuff, when you color the hippo you can save it. That's literally it.">
+  <meta name="keywords" content="color, in, this, picture, of, a, hippo, colorinthispictureofahippo, Ethan Hazel, Exetric">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="language" content="English">
+  <meta name="author" content="Ethan Hazel">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Color In This Picture of a Hippo.com">
+  <meta property="og:description" content="a site where you color in a picture of a hippo, you got some colors and stuff, when you color the hippo you can save it. That's literally it.">
+  <meta property="og:image" content="./assets/metaImage.png">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Color In This Picture of a Hippo.com">
+  <meta property="twitter:description" content="a site where you color in a picture of a hippo, you got some colors and stuff, when you color the hippo you can save it. That's literally it.">
+  <meta property="twitter:image" content="./assets/metaImage.png">
+</head>
+
+<body>
+  <div class="fade"></div>
+  <div id="startMenu" class="startMenu">
+    <div class="hippoGallery">
+      <h1 id="hippoTitle">Choose a Hippo</h1>
+      <img src="./assets/Maurice.png" id="maurice" alt="Maurice" class="hippoPhoto">
+      <img src="./assets/Hoffman.png" id="hoffman" alt="hoffman" class="hippoPhoto">
+      <img src="./assets/Jerome.png" id="jerome" alt="jerome" class="hippoPhoto">
+      <h1 id="hippoName">Hippo Name</h1>
+    </div>
+  </div>
+  <div class="header">
+    <h1 id="logo">ColorInThisPictureofaHippo</h1>
+    <div title="Go Back" id="back" class="back"></div>
+    <div title="Credits and Information" onclick="window.open('./info.html')" class="info"></div>
+    <div title="Undo" id="undo" class="undo"></div>
+  </div>
+  <canvas id="canvas" width="900" height="720"></canvas>
+  <div class="footer">
+    <div class="colors">
+      <div title="Black" class="color" id="black"></div>
+      <div title="White" class="color" id="white"></div>
+      <div title="Red" class="color" id="red"></div>
+      <div title="Orange" class="color" id="orange"></div>
+      <div title="Yellow" class="color" id="yellow"></div>
+      <div title="Green" class="color" id="green"></div>
+      <div title="Cyan" class="color" id="cyan"></div>
+      <div title="Blue" class="color" id="blue"></div>
+      <div title="Violet" class="color" id="violet"></div>
+    </div>
+    <svg onclick="unhide();" id="penPreview" class="penPreview" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17.62 17.62" style="enable-background:new 0 0 17.62 17.62;"
+      xml:space="preserve">
+      <style type="text/css">
+        .st0 {
+          fill: none;
+          stroke: #000000;
+          stroke-linecap: round;
+          stroke-miterlimit: 10;
+        }
+      </style>
+      <line class="st0" x1="8.81" y1="8.81" x2="8.81" y2="8.81" />
+    </svg>
+    <input id="strokeRange" type="range" name="Pen Size" min="3" max="30" value="3" oninput="onRangeInput();">
+    <div title="Download Your Hippo" id="download" class="share"></div>
+    <div title="Join The Discord Server" id="discord" onclick="window.open('https://discord.gg/RnswK7CYfP')" class="discord"></div> <!-- https://discord.gg/RnswK7CYfP -->
+    <div title="Clear Canvas" id="clear" class="trash"></div>
+    <div title="Change Stroke Size" style="display:block;" id="strokeButton" onclick="unhide();" class="stroke"></div>
+  </div>
+</body>
+<script type="text/javascript" src="./js/select.js"></script>
+<script type="text/javascript" src="./js/canvas.js"></script>
+<script type="text/javascript">
+  function unhide() {
+    if (document.getElementById('strokeButton').style.display == 'block') {
+      document.getElementById('strokeButton').style.display = 'none';
+      document.getElementById('penPreview').style.display = 'block';
+      document.getElementById('strokeRange').style.display = 'block';
+    } else {
+      document.getElementById('strokeButton').style.display = 'block';
+      document.getElementById('penPreview').style.display = 'none';
+      document.getElementById('strokeRange').style.display = 'none';
+    }
+  }
+</script>
+
+</html>
